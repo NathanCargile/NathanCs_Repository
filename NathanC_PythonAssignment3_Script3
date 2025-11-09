@@ -1,0 +1,8 @@
+width = float(input("Enter width: "))
+height = float(input("Enter height: "))
+
+area = width * height
+
+print("Area =", area)
+print("Width type:", type(width))
+print("Height type:", type(height))
