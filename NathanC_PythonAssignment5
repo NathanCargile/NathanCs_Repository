@@ -1,0 +1,22 @@
+# Ask for the user's age
+age = int(input("Enter your age: "))
+print("You entered:", age)
+print("Data type of age:", type(age))
+
+# Ask whether the user has a student ID (True/False)
+has_id_input = input("Do you have a student ID? (yes/no): ").lower()
+
+# Convert the input into a Boolean value
+has_student_id = (has_id_input == "yes")
+print("Student ID status:", has_student_id)
+print("Data type of student ID status:", type(has_student_id))
+
+# Determine eligibility
+if age < 0:
+    print("Invalid age entered.")
+elif age <= 25 and has_student_id == True:
+    print("You qualify for the student discount.")
+elif age <= 25 and has_student_id == False:
+    print("You are young enough, but you need a valid student ID.")
+else:
+    print("You do not qualify for the student discount.")
